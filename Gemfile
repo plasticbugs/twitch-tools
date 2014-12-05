@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 
 gem 'mechanize'
 
+gem 'rails_12factor', group: :production
+
 gem 'obscenity', '~> 1.0.2'
 
 # Use ActiveModel has_secure_password
