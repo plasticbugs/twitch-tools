@@ -16,43 +16,6 @@ ActiveRecord::Schema.define(version: 20141204044210) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: true do |t|
-    t.integer  "channel_id"
-    t.string   "title"
-    t.string   "subcategory"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  create_table "channels", force: true do |t|
-    t.string   "name"
-    t.text     "custom_description"
-    t.string   "custom_author"
-    t.text     "custom_keywords"
-    t.string   "custom_category"
-    t.string   "custom_subcategory"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-    t.string   "hardcode_image"
-    t.string   "custom_title"
-  end
-
-  create_table "delayed_jobs", force: true do |t|
-    t.integer  "priority",   default: 0, null: false
-    t.integer  "attempts",   default: 0, null: false
-    t.text     "handler",                null: false
-    t.text     "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string   "locked_by"
-    t.string   "queue"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
-  end
-
-  add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
-
   create_table "donations", force: true do |t|
     t.string   "username"
     t.string   "amount"
@@ -60,22 +23,6 @@ ActiveRecord::Schema.define(version: 20141204044210) do
     t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "videos", force: true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.string   "thumb_url"
-    t.datetime "publish_date"
-    t.string   "video_id"
-    t.text     "download_link"
-    t.boolean  "converted"
-    t.string   "audio_path"
-    t.integer  "duration"
-    t.string   "s3_permalink"
-    t.integer  "channel_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
   end
 
 end

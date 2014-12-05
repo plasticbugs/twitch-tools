@@ -2,7 +2,7 @@
 	<% if donation.comment.length > 1 %>
 	<div class="donation" data-time="<%= donation.timeadded.to_s(:number) %>">
 		<%= "Thanks for your #{donation.amount} donation, " %><span class="username"><%=  Obscenity.sanitize(donation.username) %></span>!<br/>
-		<span class="username"><%= "#{Obscenity.sanitize(donation.username)} says: " %></span><%= Obscenity.sanitize(donation.comment) %>
+		<span class="username"><%= "#{Obscenity.sanitize(donation.username)} says: " %></span><%= Obscenity.sanitize(donation.comment).truncate(280) %>
 	</div>
 
 	<% else %>
