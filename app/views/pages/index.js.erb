@@ -1,0 +1,17 @@
+
+<% if @flag == "old item" %>
+	document.getElementById("donation-container").innerHTML = "<%= j render(:partial => 'donations', :locals => { :donations => @donations}) %>";
+	setTimeout(function() { $("#donation-container").fadeTo( 2000, 0 ) }, 25000);
+<% end %>
+
+<% if @flag == "new items" %>
+	document.getElementById("donation-container").innerHTML = "<%= j render(:partial => 'donations', :locals => { :donations => @donations}) %>";
+	$("#donation-container").fadeTo( 2000, 100 );
+	setTimeout(function() { $("#donation-container").fadeTo( 2000, 0 ) }, 25000);
+<% end %>
+
+<% if @flag == "no items" %>
+	document.getElementById("donation-container").innerHTML = "<%= j render(:partial => 'donations', :locals => { :donations => @donations}) %>";
+	$("#donation-container").fadeTo( 2000, 100 );
+	setTimeout(function() { $("#donation-container").fadeTo( 2000, 0 ) }, 25000);
+<% end %>

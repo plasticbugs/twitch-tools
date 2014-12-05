@@ -1,0 +1,30 @@
+ <script>
+$(function() {
+	setTimeout(updateDonations, 60000);
+});
+
+function updateDonations () {
+	var after = $("#donation-container :last-child").attr("data-time");
+	$.getScript("/pages.js?after=" + after);
+	setTimeout(updateDonations, 60000);
+};
+
+</script>
+
+
+<div id="donation-container">
+	<% @donations.each do |donation| %>
+	<% if donation.comment.length > 1 %>
+	<div class="donation" data-time="<%= donation.timeadded.to_s(:number) %>">
+		<%= "Thanks for your #{donation.amount} donation, " %><span class="username"><%=  Obscenity.sanitize(donation.username) %></span>!<br/>
+		<span class="username"><%= "#{Obscenity.sanitize(donation.username)} says: " %></span><%= Obscenity.sanitize(donation.comment) %>
+	</div>
+
+	<% else %>
+		<div class="donation" data-time="<%= donation.timeadded.to_s(:number) %>">
+			<%= "Thanks for your #{donation.amount} donation, " %>
+			<span class="username"><%=  Obscenity.sanitize(donation.username) %></span>!</div>
+	<% end %>
+<% end %>
+
+</div>

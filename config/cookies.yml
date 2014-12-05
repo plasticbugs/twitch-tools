@@ -1,0 +1,157 @@
+---
+childsplaycharity.org:
+  /:
+    !binary "X19jZmR1aWQ=": !ruby/object:Mechanize::Cookie
+      name: !binary |-
+        X19jZmR1aWQ=
+      value: d9d629e1be63c9af085ba326c2ff69a531417513213
+      domain: childsplaycharity.org
+      for_domain: true
+      path: /
+      secure: false
+      httponly: true
+      expires: Wed, 02 Dec 2015 09:40:13 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:13.504297000 -08:00
+      accessed_at: 2014-12-02 01:40:16.145682000 -08:00
+!binary "c3NvLmNoaWxkc3BsYXljaGFyaXR5Lm9yZw==":
+  /:
+    !binary "Y3Bzc29fY3NyZl9jb29raWU=": !ruby/object:Mechanize::Cookie
+      name: !binary |-
+        Y3Bzc29fY3NyZl9jb29raWU=
+      value: a01ff01664fb00dc292f42b802b95e22
+      domain: !binary |-
+        c3NvLmNoaWxkc3BsYXljaGFyaXR5Lm9yZw==
+      for_domain: false
+      path: /
+      secure: false
+      httponly: false
+      expires: Tue, 02 Dec 2014 11:38:51 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:16.380782000 -08:00
+      accessed_at: 2014-12-02 01:40:16.380782000 -08:00
+accounts.google.com:
+  /:
+    GAPS: !ruby/object:Mechanize::Cookie
+      name: GAPS
+      value: 1:IqOWXcN1g4bBYDJD3fmyni1nbVBdcQ:SeV2h4oSbB8Mmrzs
+      domain: accounts.google.com
+      for_domain: false
+      path: /
+      secure: true
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.719451000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    LSID: !ruby/object:Mechanize::Cookie
+      name: LSID
+      value: lso:DQAAABoBAACTx2eCYeuGt8wlcowB926HJ9FnO6LZLOSD_LtBrvxHTRk5-0MH2KQx9c80E1dLCizy4M0NDQaCw4jLLz0SulIYcygk0ctH0kg3ZXYmoHCn7uWbiuBlaudvM2alaJ6mN_BEGv761K0b64nghyoHbquuRqrkpZnOSrG51YENpIk5HM8L11nZ_zvokeYYAu_TkMitFVq_bvkNr1bidwzynjtnwBf809cECPsRWlZQLsWAeY5lM7L9UdTkf5pHMUBdIJ8tChN4iVuvz2Tb11t6v6WUI1FIfhdHWsYPT5EQgfsiAYkR37RzMHtM3n6zz2-o35TKpAxyuk3vzGLBpnEQlXcuZzMIMob2cCERbyws61sRlhS-n49shtOEKVgeyBMHVfE
+      domain: accounts.google.com
+      for_domain: false
+      path: /
+      secure: true
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.888779000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    ACCOUNT_CHOOSER: !ruby/object:Mechanize::Cookie
+      name: ACCOUNT_CHOOSER
+      value: AFx_qI6CqbCLxdTNiems-rYK9UeR9PWu_xUFSLlIgPj6D-ylkPbNJUMXl4Qym0ARTxFU7zKrp2SuzoPpx5paN_ZVMlj8vpgWuoQUT0IJ11q_QDixbezAmXXtB6mOC4AhiLiMTh2sWqfcIUoiMjjSzTVXRNlM_NHyyQ
+      domain: accounts.google.com
+      for_domain: false
+      path: /
+      secure: true
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.891192000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+  /o:
+    LSOSID: !ruby/object:Mechanize::Cookie
+      name: LSOSID
+      value: DQAAABwBAAC2o1CL6ew2Y0yv5hj_JNFl3-g6yzCJHEoCE39ACRDeFcifAg7y6syxI-8e0hb2By8emfoqmh664Li-EwNowd4SZaovg6Zj_FLUaP8yZ8VoWUgkiusFECTIbI1A22Et2aOzy6OomFS2sp2CRsMQLEzk6aY_vjuItldQtcINZapRHJmqrGODaFrXOxVy3oCIEvBQeFSe8iaDvs1z-1-Gclbax7HJYPvdVMV-UTm4DEfKpouun_00YIswx3TBRC5wXBxj6FoZN-M3XGS6twDJpTtSgRbxwFtKlKNNjuzI7pTh_smhDkr9OCqGMIWrzKznVo2EeM_hWvR5lAfc-OLAk74EaOxaJi8pFPs3wJakI3l7w-jl_49Rc9-fjM-4yHAV5J4
+      domain: accounts.google.com
+      for_domain: false
+      path: /o
+      secure: true
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:15 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:15.050681000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+google.com:
+  /:
+    NID: !ruby/object:Mechanize::Cookie
+      name: NID
+      value: 67=psDghLpOyXMwBR-qYTaaMaVJsqCqVfW_wUMqHDHZ9PfTMu1A_4HsRlVBojAGUp9ZAYZU24xCGAmOCYgFVZNHV3aDKf9vdHURR_HCwl-js5t-xND5jhuSoZ1JPHTBRyDOqqLoyxGFUggmP4mVX3oUi9GptUg8xoE
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: false
+      httponly: true
+      expires: Wed, 03 Jun 2015 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.887693000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    SID: !ruby/object:Mechanize::Cookie
+      name: SID
+      value: DQAAABcBAACQrn1JZyns3WwUd6XOfbFL56uukwBWbIkyyP0-8WwVnNjwBJUGp3vp43Tz-bg19sSHS-l47tZazu-GW7vtQlY2ULIl4egMDsWGcK78XkShkCs94ookShltFDU3WpU9Q-skzkIWvvhqmjhcGjMfHTHPi801Q7J4mSG68vq6Ra8mN8NUPhvCg61gAkkP0Kj0O5kcKMgkz0zYeO3fR4OgDVoUYt5cbe43hrzuOjESWCjg4DU7eI6yxiG2b1iF39T36A4gXBgPW4ZhkSX_rMMvLxTDGjzB7bbCqig4isGkVKD8LiJvHmOTmEIXHyfPwLK1DCzA40CxaYQvVfBtsoUITJeweucWg1l4TXffc46Qr2fXZRYYzCa0CUAnalHxvGR2FJ4
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: false
+      httponly: false
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.888264000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    HSID: !ruby/object:Mechanize::Cookie
+      name: HSID
+      value: A3qs_hC34nQkh-TfY
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: false
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.889102000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    SSID: !ruby/object:Mechanize::Cookie
+      name: SSID
+      value: AcQhqEMFMaHAkZ1ht
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: true
+      httponly: true
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.889623000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    APISID: !ruby/object:Mechanize::Cookie
+      name: APISID
+      value: LXHTOdQCu2hT8spV/AX34IpPY5BJuIo2JO
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: false
+      httponly: false
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.890118000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
+    SAPISID: !ruby/object:Mechanize::Cookie
+      name: SAPISID
+      value: Lb8d2HRVXlutw27L/A7HR6HFJiGzCX15Xf
+      domain: google.com
+      for_domain: true
+      path: /
+      secure: true
+      httponly: false
+      expires: Thu, 01 Dec 2016 09:40:14 GMT
+      max_age: 
+      created_at: 2014-12-02 01:40:14.890623000 -08:00
+      accessed_at: 2014-12-02 01:40:15.051373000 -08:00
