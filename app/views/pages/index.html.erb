@@ -1,12 +1,12 @@
  <script>
 $(function() {
-	setTimeout(updateDonations, 20000);
+	setTimeout(updateDonations, 60000);
 });
 
 function updateDonations () {
 	var after = $("#donation-container :last-child").attr("data-time");
 	$.getScript("/pages.js?after=" + after);
-	setTimeout(updateDonations, 20000);
+	setTimeout(updateDonations, 60000);
 };
 </script>
 
