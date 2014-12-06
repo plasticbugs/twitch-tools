@@ -13,6 +13,6 @@
 <% if @flag == "no items" %>
 	document.getElementById("donation-container").innerHTML = "<%= j render(:partial => 'donations', :locals => { :donations => @donations}) %>";
 	$("#donation-container").fadeTo( 2000, 100 );
+	setTimeout(function() { $("#donation-container").fadeTo( 2000, 0 ) }, 25000);
 <% end %>
 
-	// setTimeout(function() { $("#donation-container").fadeTo( 2000, 0 ) }, 25000);
