@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   resources :pages do
   end
 
+  resources :wheel
+
   # Example resource route with options:
   #   resources :products do
   #     member do

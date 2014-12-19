@@ -32,6 +32,8 @@ gem 'rails_12factor', group: :production
 
 gem 'obscenity', '~> 1.0.2'
 
+gem 'cinch'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
