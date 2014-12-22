@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   resources :pages do
   end
 
-  resources :wheel
+  get 'wheel/:channel_name' => 'wheel#index'
 
   # Example resource route with options:
   #   resources :products do
