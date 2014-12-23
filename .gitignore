@@ -21,3 +21,4 @@ secrets.yml
 .DS_Store
 
 bfg.jar
+.env
