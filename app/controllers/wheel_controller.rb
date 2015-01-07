@@ -71,7 +71,7 @@ class WheelController < ApplicationController
     @hexcolors = []
 
     @users.count.times {
-      @rgbcolors<< hsv_to_rgb(0.10, (rand(20..99)/100.0), 0.90)
+      @rgbcolors<< hsv_to_rgb(0.10, (rand(20..70)/100.0), 0.90)
     }
 
     @rgbcolors.each do |color|
