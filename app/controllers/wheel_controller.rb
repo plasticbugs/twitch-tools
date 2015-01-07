@@ -37,7 +37,7 @@ class WheelController < ApplicationController
 
     thr = Thread.new { @bot.start }
 
-    sleep(1)
+    sleep(10)
 
     @channel = @bot.channel_list.first
 
