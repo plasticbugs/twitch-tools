@@ -16,7 +16,6 @@
 /tmp
 
 .ruby-version
-secrets.yml
 
 .DS_Store
 
