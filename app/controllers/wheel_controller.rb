@@ -37,7 +37,7 @@ class WheelController < ApplicationController
 
     thr = Thread.new { @bot.start }
 
-    sleep(20)
+    sleep(30)
 
     @channel = @bot.channel_list.first
 
@@ -49,14 +49,14 @@ class WheelController < ApplicationController
       @users << user.first.nick
     }
 
-    if @users.count < 1
-      sleep(20)
-      @channel = @bot.channel_list.first
+    # if @users.count < 1
+    #   sleep(20)
+    #   @channel = @bot.channel_list.first
 
-      @channel.users.each { |user|
-        @users << user.first.nick
-      }
-    end
+    #   @channel.users.each { |user|
+    #     @users << user.first.nick
+    #   }
+    # end
 
     if @users.count > 25
       @users = @users.sample(25)
