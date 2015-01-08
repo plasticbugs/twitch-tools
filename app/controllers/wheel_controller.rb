@@ -35,14 +35,15 @@ class WheelController < ApplicationController
       }
     end
 
-    thr = Thread.new { @bot.start }
+    # thr = Thread.new { @bot.start }
 
-    sleep(25)
+    @bot.start
+    # sleep(25)
 
     @channel = @bot.channel_list.first
 
-    @bot.quit
-    thr.kill
+
+    # thr.kill
 
     @users = []
     @channel.users.each { |user|
@@ -86,6 +87,8 @@ class WheelController < ApplicationController
       end
       @hexcolors << @color_as_hex
     end
+
+    @bot.quit
 
   end
 
