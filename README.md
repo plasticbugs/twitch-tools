@@ -9,7 +9,12 @@ The donation widget sanitizes foul language in donation usernames and messages b
 The donation widget needs your Google login info in order to log in and scrape the Childsplay website with help from Mechanize.
 
 ## Carnival-style Prize Wheel ##
-A prize wheel that pulls in a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. The user can click the Spin button for each prize to be awarded to lucky viewers.
+
+![Image of Yaktocat](https://github.com/plasticbugs/twitch-tools/tree/master/app/assets/images/wheel_example.png)
+
+A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. The user can click the Spin button for each prize to be awarded to lucky viewers.
+
+When the wheel stops spinning, the winning viewer is presented in the middle of the wheel.
 
 Currently, the app ignores the user that matches the TWITCH_USERNAME ENV variable and the selected channel's username. More can be added to the ignore list. See lines 72 & 73 of app/controllers/wheel_controller.rb.
 
