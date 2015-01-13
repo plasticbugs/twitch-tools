@@ -12,11 +12,11 @@ The donation widget needs your Google login info in order to log in and scrape t
 
 ![Image of Prize Wheel](https://raw.githubusercontent.com/plasticbugs/twitch-tools/master/app/assets/images/wheel_example.png)
 
-A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. The user can click the Spin button for each prize to be awarded to lucky viewers.
+A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. When the presenter clicks the Spin button, the whell is set into motion and spins for approximately 15 seconds.
 
-When the wheel stops spinning, the winning viewer is presented in the middle of the wheel.
+When the wheel stops spinning, the winning viewer's name is presented in the middle of the wheel.
 
-Currently, the app ignores the user that matches the TWITCH_USERNAME ENV variable and the selected channel's username. More can be added to the ignore list. See lines 72 & 73 of app/controllers/wheel_controller.rb.
+Currently, the prize wheel ignores the user that matches the TWITCH_USERNAME ENV variable and the selected channel's username. More can be added to the ignore list. See lines 72 & 73 of app/controllers/wheel_controller.rb.
 
 ### URLS: ##
 The donation widget currently lives at:
@@ -36,15 +36,20 @@ rooturl/wheel/gamesdonequick //for example
 create a .env in this app's root directory with these variables
 
 ```
+// Twitch credentials are for the Prize Wheel widget
 TWITCH_USERNAME="your_twitch_username"
 TWITCH_OAUTH_PASSWORD="twitch_oauth_password"
+
+// Childs Play info and Google credentials are for the Donation widget
 CHILDS_PLAY_DONATION_PAGE="https://donate.childsplaycharity.org/your_url_here"
 GOOGLE_LOGIN="your_google_login_for_childsplay"
 GOOGLE_PASSWORD="your_google_password_for_childsplay_authentication"
 ```
-To get a Twitch username, sign up for an account at http://www.twitch.tv
+You only need to supply credentials/urls for the widget(s) you intend to use.
 
-Get your Twitch oauth password via this page: http://twitchapps.com/tmi/
+**For Twitch.TV**
+* To get a Twitch username, sign up for an account at http://www.twitch.tv
+* Get your Twitch oauth password via this page: http://twitchapps.com/tmi/
 
 **For Childsplay:**
 * Make sure you've created your Childs Play account using your Google login info. Currently, this widget only supports Google logins for Childs Play.
