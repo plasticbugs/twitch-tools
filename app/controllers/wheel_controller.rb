@@ -65,14 +65,13 @@ class WheelController < ApplicationController
     #   }
     # end
 
+    @users.delete(params[:channel_name])
+    @users.delete(ENV["TWITCH_USERNAME"])
+
     if @users.count > 25
       @users = @users.sample(25)
     end
 
-    # @users.delete('gamesradar')
-    # @users.delete('plasticbugs')
-    # @users.delete('thomasdarnell')
-    # @users.delete('asnyder101')
 
     @rgbcolors = []
     @hexcolors = []
