@@ -1,7 +1,7 @@
 # Twitch Tools #
 This is a small but growing set of on-screen, chromakey-able widgets for Twitch streamers. These widgets are on pure green backgrounds so they can be easily cropped and keyed out with your streaming software package.
 
-### Childs Play Charity Donation Widget ##
+### Childs Play Charity Donation Broadcaster ##
 A donation widget that scrapes ChildsPlayCharity.org and posts donations on screen as they occur along with the donor's username, message and amount. Donation messages stay on-screen for 30 seconds, then fade away.
 
 The donation widget sanitizes foul language in donation usernames and messages by default. You can disable this by removing the "Obscenity#sanitize" method surrounding the interpolated message string in apps/views/pages/_donations.html.erb partial (lines 4, 5, & 11).
@@ -36,7 +36,7 @@ rooturl/wheel/gamesdonequick //for example
 create a .env in this app's root directory with these variables
 
 ```
-// Twitch credentials are for the Prize Wheel widget
+// Twitch credentials are for the Prize Wheel
 TWITCH_USERNAME="your_twitch_username"
 TWITCH_OAUTH_PASSWORD="twitch_oauth_password"
 
