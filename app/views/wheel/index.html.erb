@@ -16,7 +16,11 @@ var prize_descriptions = <%= raw @users %>;
 var current_user_status = {};
 
 var startAngle = 0;
+<% if @users.count % 2 == 0 %>
 var arc = Math.PI / <%= (@users.count / 2) %>;
+<% else %>
+var arc = Math.PI / <%= (@users.count / 2) + 0.5 %>;
+<% end %>
 var spinTimeout = null;
 
 var spinArcStart = 10;
