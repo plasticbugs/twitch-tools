@@ -15,6 +15,7 @@ class WheelController < ApplicationController
     [(r*256).to_i, (g*256).to_i, (b*256).to_i]
   end
 
+
   def index
 
     @params = "#" + params[:channel_name]
@@ -35,20 +36,25 @@ class WheelController < ApplicationController
       }
     end
 
-    thr = Thread.new { @bot.start }
-
-    sleep(20)
-
-    @channel = @bot.channel_list.first
-
-
-    @bot.quit
-    thr.kill
+    @thr ||= Thread.new { @bot.start }
 
     @users = []
-    @channel.users.each { |user|
-      @users << user.first.nick
-    }
+
+    loop do
+      break if @bot.channel_list.first
+    end
+      
+
+      @channel = @bot.channel_list.first
+
+      @channel.users.each { |user|
+        @users << user.first.nick
+      }
+
+    @bot.quit
+
+    @thr.kill
+
 
     # if @users.count < 1
     #   sleep(20)
@@ -63,10 +69,10 @@ class WheelController < ApplicationController
       @users = @users.sample(25)
     end
 
-    @users.delete('gamesradar')
-    @users.delete('plasticbugs')
-    @users.delete('thomasdarnell')
-    @users.delete('asnyder101')
+    # @users.delete('gamesradar')
+    # @users.delete('plasticbugs')
+    # @users.delete('thomasdarnell')
+    # @users.delete('asnyder101')
 
     @rgbcolors = []
     @hexcolors = []
