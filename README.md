@@ -12,7 +12,7 @@ The donation widget needs your Google login info in order to log in and scrape t
 
 ![Image of Prize Wheel](https://raw.githubusercontent.com/plasticbugs/twitch-tools/master/app/assets/images/wheel_example.png)
 
-A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. When the presenter clicks the Spin button, the whell is set into motion and spins for approximately 15 seconds.
+A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. When the presenter clicks the Spin button, the wheel is set into motion and spins for approximately 15 seconds.
 
 When the wheel stops spinning, the winning viewer's name is presented in the middle of the wheel.
 
