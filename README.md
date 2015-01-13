@@ -21,24 +21,26 @@ The prize wheel endpoint is:
 
 `
 rooturl/wheel/[twitch channel name]
+
 rooturl/wheel/gamesdonequick //for example
 `
 
 ### ENV Variables ###
 create a .env in this app's root directory with these variables
 
-`
+```
 TWITCH_USERNAME="your_twitch_username"
 TWITCH_OAUTH_PASSWORD="twitch_oauth_password"
 CHILDS_PLAY_DONATION_PAGE="https://donate.childsplaycharity.org/your_url_here"
 GOOGLE_LOGIN="your_google_login_for_childsplay_for_childsplay"
 GOOGLE_PASSWORD="your_google_password_for_childsplay_authentication"
-`
+```
 To get a Twitch username, sign up for an account at http://www.twitch.tv
+
 Get your Twitch oauth password via this page: http://twitchapps.com/tmi/
 
 **For Childsplay:**
-*Make sure you've created your Childs Play account using your Google login info. Currently, this widget only supports Google logins for Childs Play.
-*To get the URL needed for the DONATION_PAGE variable, [sign in with your Google account here](https://sso.childsplaycharity.org/user/login).
-*Now, click the "Organizer" link in the navigation bar.
-*Finally, click the "Donations" link next to your event's name and copy that page's URL and paste it into the appropriate variable in your .env file.
+* Make sure you've created your Childs Play account using your Google login info. Currently, this widget only supports Google logins for Childs Play.
+* To get the URL needed for the DONATION_PAGE variable, [sign in with your Google account here](https://sso.childsplaycharity.org/user/login).
+* Now, click the "Organizer" link in the navigation bar.
+* Finally, click the "Donations" link next to your event's name and copy that page's URL and paste it into the appropriate variable in your .env file.
