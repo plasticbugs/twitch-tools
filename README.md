@@ -15,6 +15,7 @@ The donation widget needs your Google login info in order to log in and scrape t
 A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. When the presenter clicks the Spin button, the wheel is set into motion and spins for approximately 15 seconds.
 
 When the wheel stops spinning, the winning viewer's name is presented in the middle of the wheel.
+![Spinning Wheel](https://raw.githubusercontent.com/plasticbugs/twitch-tools/master/app/assets/images/spinwheel.gif)
 
 Currently, the prize wheel ignores the user that matches the TWITCH_USERNAME ENV variable and the selected channel's username. More can be added to the ignore list. See lines 72 & 73 of app/controllers/wheel_controller.rb.
 
