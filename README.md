@@ -10,7 +10,7 @@ The donation widget needs your Google login info in order to log in and scrape t
 
 ## Carnival-style Prize Wheel ##
 
-![Image of Yaktocat](https://github.com/plasticbugs/twitch-tools/tree/master/app/assets/images/wheel_example.png)
+![Image of Prize Wheel](https://raw.githubusercontent.com/plasticbugs/twitch-tools/master/app/assets/images/wheel_example.png)
 
 A prize wheel that contains a maximum of 25 randomly selected viewers of a given Twitch.tv channel -- the names are pulled from the chat room. The user can click the Spin button for each prize to be awarded to lucky viewers.
 
