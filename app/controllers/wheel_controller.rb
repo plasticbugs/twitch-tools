@@ -41,7 +41,10 @@ class WheelController < ApplicationController
     @users = []
 
     loop do
-      break if @bot.channel_list.first
+      if @bot.channel_list.first && @bot.channel_list.first.users.count > 2
+        logger.info "THE COUNT IS #{@bot.channel_list.first.users.count}"
+        break
+      end
     end
       
 
