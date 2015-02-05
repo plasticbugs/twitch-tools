@@ -70,6 +70,12 @@ class WheelController < ApplicationController
 
     @users.delete(params[:channel_name])
     @users.delete(ENV["TWITCH_USERNAME"])
+    @users.delete('antdiddly')
+    @users.delete('gr_david_r')
+    @users.delete('gr_jann')
+    @users.delete('antdiddly')
+
+
 
     if @users.count > 25
       @users = @users.sample(25)
