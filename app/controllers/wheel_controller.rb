@@ -49,10 +49,11 @@ class WheelController < ApplicationController
       
 
       @channel = @bot.channel_list.first
-
+    if @channel
       @channel.users.each { |user|
         @users << user.first.nick
       }
+    end
 
     @bot.quit
 
